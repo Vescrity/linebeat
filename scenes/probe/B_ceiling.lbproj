@@ -1,0 +1,54 @@
+{
+ "format": "linebeat",
+ "version": 1,
+ "name": "B_ceiling",
+ "world": {
+  "gravity": -9.81,
+  "kill_y": -50,
+  "seed": 1
+ },
+ "lines": [
+  {
+   "id": 1,
+   "ax": {
+    "v": -3
+   },
+   "ay": {
+    "v": 2
+   },
+   "bx": {
+    "v": 3
+   },
+   "by": {
+    "v": 2
+   },
+   "collide": true,
+   "voice": {
+    "type": "sf2",
+    "file": "",
+    "bank": 0,
+    "program": 10
+   },
+   "note": {
+    "v": 72
+   },
+   "vel": {
+    "v": 90
+   },
+   "gain": {
+    "v": 1.0
+   }
+  }
+ ],
+ "balls": [
+  {
+   "id": 2,
+   "x": 0,
+   "y": 1,
+   "vx": 0,
+   "vy": 5,
+   "r": 0
+  }
+ ],
+ "emitters": []
+}

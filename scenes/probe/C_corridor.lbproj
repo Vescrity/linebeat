@@ -1,0 +1,85 @@
+{
+ "format": "linebeat",
+ "version": 1,
+ "name": "C_corridor",
+ "world": {
+  "gravity": 0,
+  "kill_y": -50,
+  "seed": 1
+ },
+ "lines": [
+  {
+   "id": 1,
+   "ax": {
+    "v": 0
+   },
+   "ay": {
+    "v": -5
+   },
+   "bx": {
+    "v": 0
+   },
+   "by": {
+    "v": 5
+   },
+   "collide": true,
+   "voice": {
+    "type": "sf2",
+    "file": "",
+    "bank": 0,
+    "program": 10
+   },
+   "note": {
+    "v": 72
+   },
+   "vel": {
+    "v": 90
+   },
+   "gain": {
+    "v": 1.0
+   }
+  },
+  {
+   "id": 3,
+   "ax": {
+    "v": 0.05
+   },
+   "ay": {
+    "v": -5
+   },
+   "bx": {
+    "v": 0.05
+   },
+   "by": {
+    "v": 5
+   },
+   "collide": true,
+   "voice": {
+    "type": "sf2",
+    "file": "",
+    "bank": 0,
+    "program": 10
+   },
+   "note": {
+    "v": 72
+   },
+   "vel": {
+    "v": 90
+   },
+   "gain": {
+    "v": 1.0
+   }
+  }
+ ],
+ "balls": [
+  {
+   "id": 2,
+   "x": 0.025,
+   "y": 0,
+   "vx": 100,
+   "vy": 0,
+   "r": 0
+  }
+ ],
+ "emitters": []
+}

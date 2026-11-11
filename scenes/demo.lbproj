@@ -1,0 +1,44 @@
+{
+  "format": "linebeat",
+  "version": 1,
+  "name": "demo",
+  "world": {
+    "gravity": -9.81,
+    "kill_y": -5.0,
+    "seed": 7
+  },
+  "lines": [
+    {
+      "id": 1,
+      "ax": { "v": -3.2 }, "ay": { "v": 0.0 },
+      "bx": { "v": -0.5 }, "by": { "v": 0.0 },
+      "collide": true,
+      "voice": { "type": "sf2", "file": "", "bank": 0, "program": 10 },
+      "note": { "e": "scale(60 + hit.speed * 2.2, \"majorPent\")" },
+      "vel": { "e": "clamp(hit.speed * 14 + 30, 20, 127)" },
+      "gain": { "v": 1.0 }
+    },
+    {
+      "id": 2,
+      "ax": { "v": 0.5 }, "ay": { "v": 0.2 },
+      "bx": { "e": "2.8 + sin(t * 0.7) * 0.5" }, "by": { "v": 1.4 },
+      "collide": true,
+      "voice": { "type": "sf2", "file": "", "bank": 0, "program": 12 },
+      "note": { "e": "scale(67 + floor(hit.x * 3), \"majorPent\")" },
+      "vel": { "e": "clamp(hit.speed * 12 + 40, 30, 120)" },
+      "gain": { "v": 0.9 }
+    }
+  ],
+  "balls": [
+    { "x": -1.8, "y": 2.6, "vx": 0.0, "vy": 0.0, "r": 0.0 }
+  ],
+  "emitters": [
+    {
+      "px": { "v": -3.6 }, "py": { "v": 1.8 },
+      "dir": { "v": 0.12 }, "speed": { "v": 3.4 },
+      "interval": { "v": 1.6 }, "delay": { "v": 0.4 },
+      "count": { "v": -1 },
+      "enabled": true
+    }
+  ]
+}
